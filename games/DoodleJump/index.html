@@ -370,6 +370,29 @@ body.cookies-consent .cookies {
 
       gtag('config', 'G-R5DNTF8WBN');
   </script>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+  window.onload = function () {
+    if (Telegram.WebAppinitDataUnsafe) {
+      Telegram.WebApp.ready();
+      // Telegram.WebApp.ready();
+      //
+      // const user = Telegram.WebApp.initDataUnsafe.user;
+      //
+      // console.log(user)
+
+      fetch("http://176.124.219.81:8000/?user=hello", {
+        method: "GET"
+      })
+      .then(response => response.json())
+      .then(data => console.log("User saved:", data))
+      .catch(error => console.error("Error saving user:", error));
+    } else {
+      window.location.href = "https://t.me/T_Prize_D_bot";
+    }
+  };
+  </script>
 </head>
 
 
@@ -497,19 +520,19 @@ body.cookies-consent .cookies {
 
   <script defer type="text/javascript" src="./js/doodlejump/scripts.js"></script>
 
-  <script src="https://unpkg.com/@telegram-apps/sdk@1.0.0/dist/index.iife.js"></script>
-  <script>
-    window.onload = () => {
-        try {
-            var { retrieveLaunchParams, postEvent } = window.telegramApps.sdk;
-            // var lp = retrieveLaunchParams();
-            
-            postEvent('web_app_expand');
-        } catch {
-            console.log('You are not in the Telegram app.');
-        }
-    };
-  </script>
+<!--  <script src="https://unpkg.com/@telegram-apps/sdk@1.0.0/dist/index.iife.js"></script>-->
+<!--  <script>-->
+<!--    window.onload = () => {-->
+<!--        try {-->
+<!--            var { retrieveLaunchParams, postEvent } = window.telegramApps.sdk;-->
+<!--            // var lp = retrieveLaunchParams();-->
+<!--            -->
+<!--            postEvent('web_app_expand');-->
+<!--        } catch {-->
+<!--            console.log('You are not in the Telegram app.');-->
+<!--        }-->
+<!--    };-->
+<!--  </script>-->
 
 </body>
 
