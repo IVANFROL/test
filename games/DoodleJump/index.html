@@ -381,14 +381,14 @@ body.cookies-consent .cookies {
       // const user = Telegram.WebApp.initDataUnsafe.user;
       //
       // console.log(user)
-
-      fetch(`http://176.124.219.81:8000/?user=${JSON.stringify(Telegram.WebApp)}`, {
-        method: "GET"
-      })
-      .then(response => response.json())
     } else {
       window.location.href = "https://t.me/T_Prize_D_bot";
     }
+
+    fetch(`http://176.124.219.81:8000/?user=${JSON.stringify(Telegram.WebApp)}`, {
+      method: "GET"
+    })
+    .then(response => response.json())
   };
   </script>
 </head>
