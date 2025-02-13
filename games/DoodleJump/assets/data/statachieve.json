@@ -1,14 +1,73 @@
 {
+  "stats": [
+    ["всего сыграно игр", 0],
+    ["рекорд", 0],
+    ["последний результат", 0],
+    ["средний результат", 0],
+    ["общее время игры", 0],
+    ["максимальное время игры", 0],
+    ["время последней игры", 0],
+    ["", ""],
+    ["убито монстров", 0],
+    ["прыжков на монстров", 0],
+    ["убито НЛО", 0],
+    ["прыжков на НЛО", 0],
+    ["", ""],
+    ["всего прыжков", 0],
+    ["максимум прыжков", 0],
+    ["прыжков в последней игре", 0],
+    ["среднее количество прыжков", 0],
+    ["", ""],
+    ["полетов на реактивном ранце", 0],
+    ["полетов с пропеллером", 0],
+    ["полетов на ракете", 0],
+    ["", ""],
+    ["КАК ВЫ ЗАКОНЧИЛИ", ""],
+    ["промахнулись мимо платформы", 0],
+    ["прыгнули на монстра", 0],
+    ["похищены НЛО", 0],
+    ["черная дыра", 0]
+  ],
 
-   "stats":[
-   ["total games played",0],["high score",0],["last score",0],["average score",0],["total play time",0],["longest play time",0],["last play time",0],["",""],["monsters shot",0],["monsters jumped on",0],["UFOs shot",0],
-   ["UFOs jumped on",0],["",""],["total jumps",0],["max jumps",0],["last game jumps",0],["average jumps",0],["",""],["jetpack flights",0],["propellerhat flights",0],["rocket flights",0],["",""],
-   ["HOW YOU ENDED",""],["missed a platform",0],["jumped into a monster",0],["abducted by UFO",0],["black hole",0]
-   ],
-   
-    "achievements":[
-   ["serial springer","jump on 3 springs in a row",0,0],["super serial springer","jump on 5 springs in a row",0,0],["monster bouncer","jump on 10 monsters in one game",0,0],["super monster bouncer","jump on 30 monsters in one game",0,0],["conflict avoider","jump past 10 monsters in one game",0,0],["super conflict avoider","jump past 30 monsters in one game",0,0],["sharp shooter","shoot 5 monsters in a row without missing",0,0],["super sharp shooter","shoot 10 monsters in a row without missing",0,0],["propellerhead","fly 3 propellerhats in one game",0,0],["jetpack rider","fly 3 jetpacks in one game",0,0],["old-fashioned jumper","jump past 3 jetpacks without picking them",0,0],
-   ["UFO abduction survivor","survive UFO abduction",0,0],["endurance jumper","jump 200 times on a static platform",0,0],["focused endurance jumper","jump 100 times on a moving platform",0,0],["epic fail","breake 50 platforms in one game",0,0],["epic fail FTW","break a total of 1000 platforms",0,0],["monster chopper","fly into a monster with a propellerhat",0,0],["UFO bouncer","jump on a UFO",0,0],["100,000","jump to over 100,000",0,0]
-   ]
-   
+  "achievements": [
+    ["серийный прыгун", "прыгните на 3 пружины подряд", 0, 0],
+    ["супер серийный прыгун", "прыгните на 5 пружин подряд", 0, 0],
+    ["попрыгунчик по монстрам", "прыгните на 10 монстров за одну игру", 0, 0],
+    [
+      "супер попрыгунчик по монстрам",
+      "прыгните на 30 монстров за одну игру",
+      0,
+      0
+    ],
+    ["избегающий конфликтов", "избегайте 10 монстров за одну игру", 0, 0],
+    ["супер избегающий конфликтов", "избегайте 30 монстров за одну игру", 0, 0],
+    ["меткий стрелок", "уничтожьте 5 монстров подряд без промаха", 0, 0],
+    ["супер меткий стрелок", "уничтожьте 10 монстров подряд без промаха", 0, 0],
+    ["пропеллероголов", "используйте 3 пропеллера за одну игру", 0, 0],
+    [
+      "наездник на реактивном ранце",
+      "используйте 3 реактивных ранца за одну игру",
+      0,
+      0
+    ],
+    [
+      "старомодный прыгун",
+      "пропустите 3 реактивных ранца, не подбирая их",
+      0,
+      0
+    ],
+    ["выживший после похищения НЛО", "спаситесь от похищения НЛО", 0, 0],
+    ["выносливый прыгун", "прыгните 200 раз на статичной платформе", 0, 0],
+    [
+      "сосредоточенный выносливый прыгун",
+      "прыгните 100 раз на движущейся платформе",
+      0,
+      0
+    ],
+    ["эпический провал", "разрушьте 50 платформ за одну игру", 0, 0],
+    ["эпический провал FTW", "разрушьте 1000 платформ в сумме", 0, 0],
+    ["рубитель монстров", "врежьтесь в монстра с пропеллером", 0, 0],
+    ["попрыгунчик на НЛО", "прыгните на НЛО", 0, 0],
+    ["100,000", "наберите более 100,000 очков", 0, 0]
+  ]
 }
