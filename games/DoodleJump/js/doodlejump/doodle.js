@@ -47,6 +47,7 @@ var Doodle;
     saveName: function () {
       const name = this.inputField.value.trim();
       if (name) {
+        // Сохраняем имя в localStorage
         localStorage.setItem("DJ_Doodle_name", name);
         document.body.removeChild(this.inputField);
         this.state.start("Game"); // Переход в GameState после ввода имени
@@ -1358,7 +1359,15 @@ var Doodle;
           if (11 == this.playButton.frame) {
             this.camera.fade("#000000");
             this.camera.onFadeComplete.add(function () {
-              this.state.start("NameInput"); // Переход в NameInput вместо Game
+              // Проверяем, сохранено ли имя в localStorage
+              const savedName = localStorage.getItem("DJ_Doodle_name");
+              if (savedName) {
+                // Если имя уже сохранено, сразу начинаем игру
+                this.state.start("Game");
+              } else {
+                // Если имя не сохранено, переходим в NameInput
+                this.state.start("NameInput");
+              }
               this.playButton.loadTexture("atlas", "Play_01");
             }, this);
           }
